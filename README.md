@@ -24,7 +24,7 @@ We have designed an application with scalable  architecture which can intelligen
 ### Front End
 1. Download the git hub code
 1. Run  ```npm install```
-1 .Start the application using "npm start"
+1 .Start the application using ```npm start```
    
 ### Backend
 1. Download the repository
