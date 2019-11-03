@@ -14,7 +14,7 @@ public class MockData: NSObject {
     let interviewKey = "interviewKey"
     let eventKey = "eventKey"
     
-    public var mockProfile: StudentProfile = StudentProfile(first: "Jane", last: "Doe", interests: ["Technology"], goal: "To brush up on my interview skills")
+    public var mockProfile: StudentProfile = StudentProfile(first: "Alison", last: "Sun", interests: ["Technology"], goal: "I'm really interested in pursuing a career in technology and environmental sustainability. At this event I would like to brush up on my technical interview skills and explore careers that connect my interests in technology and environmental sustainability.")
     public var mockInterviews: [MockInterview] = [MockInterview(interviewer: "John Smith", time: "6:30pm-7:30pm", location: "Table A"), MockInterview(interviewer: "Alison Sun", time: "5:00pm-5:30pm", location: "Table C")]
     public var mockEvent: CareerEvent = CareerEvent(id: "1234", name: "Mock Interviews", location: "San Jose", date: "March 10, 2020")
     
