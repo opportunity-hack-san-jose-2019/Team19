@@ -20,9 +20,15 @@ We have designed an application with scalable  architecture which can intelligen
 
 ## Set Up Instructions
 ### iOS App
+1. Download Xcode
+1. Download the github repository
+1. Navigate to the BravenInterviewApp directory in your file manager
+1. Open BravenInterviewApp.xcworkspace with Xcode
+1. Connect an external device or use a iOS simulator
+1. Press the Play button in Xcode or Product/Run to run the code
  
 ### Front End
-1. Download the github code
+1. Download the github repository
 1. ```cd frontend/braven-hacks/```
 1. Run  ```npm install```
 1. Start the application using ```npm start```
