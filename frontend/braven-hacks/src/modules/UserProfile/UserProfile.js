@@ -43,7 +43,7 @@ export default function UserProfile() {
       <GridContainer>
         <GridItem xs={12} sm={12} md={8}>
           <Card>
-            <CardHeader color="primary">
+            <CardHeader style={{ backgroundColor: "#EB3B46" }}>
               <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
               <p className={classes.cardCategoryWhite}>Complete your profile</p>
             </CardHeader>
@@ -61,6 +61,7 @@ export default function UserProfile() {
                     }}
                   />
                 </GridItem>
+
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
                     labelText="Username"
@@ -74,6 +75,26 @@ export default function UserProfile() {
                   <CustomInput
                     labelText="Email address"
                     id="email-address"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+              </GridContainer>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={4}>
+                  <CustomInput
+                    labelText="Title"
+                    id="title"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <CustomInput
+                    labelText="Skills"
+                    id="skills"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -129,11 +150,12 @@ export default function UserProfile() {
                   />
                 </GridItem>
               </GridContainer>
+
               <GridContainer>
                 <GridItem xs={12} sm={12} md={12}>
                   <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
                   <CustomInput
-                    labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                    labelText="I am a software engineer expert in Data Analytics."
                     id="about-me"
                     formControlProps={{
                       fullWidth: true
@@ -147,7 +169,9 @@ export default function UserProfile() {
               </GridContainer>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              <Button style={{ backgroundColor: "#EB3B46" }}>
+                Update Profile
+              </Button>
             </CardFooter>
           </Card>
         </GridItem>
@@ -159,15 +183,17 @@ export default function UserProfile() {
               </a>
             </CardAvatar>
             <CardBody profile>
-              <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
+              <h4 className={classes.cardTitle}>
+                {"Co-Founder @ Tesla and SpaceX News "}
+              </h4>
+              <h4 className={classes.cardTitle}>Elon Musk</h4>
               <p className={classes.description}>
-                Don{"'"}t be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
+                I am an american entrepreneur and businessman. I am a proud
+                founder of X.com in 1999 (also known as PayPal), SpaceX in 2002
+                and Tesla Motors in 2003.
               </p>
-              <Button color="primary" round>
-                Follow
+              <Button style={{ backgroundColor: "#EB3B46" }} round>
+                More
               </Button>
             </CardBody>
           </Card>

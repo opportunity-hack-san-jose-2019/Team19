@@ -60,7 +60,7 @@ function SignUp() {
             Sign Up
           </Typography>
           <Typography variant="body2" align="center">
-            <Link href="/premium-themes/onepirate/sign-in/" underline="always">
+            <Link href="/signin" underline="always">
               Already have an account?
             </Link>
           </Typography>
@@ -128,7 +128,7 @@ function SignUp() {
               <FormButton
                 className={classes.button}
                 disabled={submitting || sent}
-                color="secondary"
+                style={{ backgroundColor: "#EB3B46", color: "#FFFFFF" }}
                 fullWidth
               >
                 {submitting || sent ? "In progress…" : "Sign Up"}
