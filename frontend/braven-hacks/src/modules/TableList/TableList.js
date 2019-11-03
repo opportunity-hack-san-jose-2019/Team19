@@ -45,65 +45,44 @@ export default function TableList() {
   const classes = useStyles();
   return (
     <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
+      <GridItem xs={12} sm={12} md={6}>
         <Card>
-          <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
+          <CardHeader style={{ backgroundColor: "#EB3B46" }}>
+            <h4 className={classes.cardTitleWhite}>
+              Mock Interview at San Jose on Jan 1, 2020
+            </h4>
           </CardHeader>
           <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-              ]}
-            />
+            <h3 className={classes.cardTitle}>Interviewee: Priyanka Singhal</h3>
+            <p className={classes.cardCategory}>Time Slot: 6:30pm - 7:00pm</p>
+            <p className={classes.cardCategory}>Location: Table A</p>
+            <h3 className={classes.cardTitle}>Interviewee: Supriya Jain</h3>
+            <p className={classes.cardCategory}>Time Slot: 7:00pm - 7:30pm</p>
+            <p className={classes.cardCategory}>Location: Table B</p>
+            <h3 className={classes.cardTitle}>Interviewee: Will Smith</h3>
+            <p className={classes.cardCategory}>Time Slot: 7:30pm - 8:00pm</p>
+            <p className={classes.cardCategory}>Location: Table C</p>
           </CardBody>
         </Card>
       </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
-        <Card plain>
-          <CardHeader plain color="primary">
+
+      <GridItem xs={12} sm={12} md={6}>
+        <Card>
+          <CardHeader style={{ backgroundColor: "#EB3B46" }}>
             <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
+              Mock Interview at San Clara on Jan 2, 2020
             </h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
           </CardHeader>
           <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
-              ]}
-            />
+            <h3 className={classes.cardTitle}>Interviewee: Nasrajan Jalin</h3>
+            <p className={classes.cardCategory}>Time Slot: 6:30pm - 7:00pm</p>
+            <p className={classes.cardCategory}>Location: Table A</p>
+            <h3 className={classes.cardTitle}>Interviewee: Shalu Rani</h3>
+            <p className={classes.cardCategory}>Time Slot: 7:00pm - 7:30pm</p>
+            <p className={classes.cardCategory}>Location: Table B</p>
+            <h3 className={classes.cardTitle}>Interviewee: Claire</h3>
+            <p className={classes.cardCategory}>Time Slot: 7:30pm - 8:00pm</p>
+            <p className={classes.cardCategory}>Location: Table C</p>
           </CardBody>
         </Card>
       </GridItem>
