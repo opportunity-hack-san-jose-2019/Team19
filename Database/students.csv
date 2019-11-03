@@ -1,0 +1,3 @@
+studentid,phoneno,email,career_interest,attendance,module_score,project_score,bonus,total_score,username,password,name
+1,4044283929,shalurani@gmail.com,"Cloud, Data Science",NULL,NULL,NULL,NULL,NULL,shalurani,$2a$10$h.WAI7pTIoj2Hs7lKXaXnuUUyU7p6IKdfrlYNxRS2z5hy07qCddZ.,"Shalu Rani"
+2,4044283930,shalurani@gmail.com,NULL,NULL,NULL,NULL,NULL,NULL,nasrajanjalin,$2a$10$gdvH1e0hQz6N6V.Vl/gXtONxwtb9WcPBeAy0tOXYsw/8DRSr3Fyom,"Nasrajan Jalin"
