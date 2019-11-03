@@ -22,14 +22,14 @@ We have designed an application with scalable  architecture which can intelligen
  * iOS App
  
  * Front End
-   1.Download the repository
-   2.Install the required dependencies from package.json using npm install
-   3.Start the application using "npm start"
+   1. Download the repository
+   2. Install the required dependencies from package.json using npm install
+   1 .Start the application using "npm start"
    
  * Backend
-   1.Download the repository
-   2.Install the required dependencies from package.json using npm install
-   3.Start the server using the command "node index.js"
+   1. Download the repository
+   1. Install the required dependencies from package.json using npm install
+   1. Start the server using the command "node index.js"
   
  
  
