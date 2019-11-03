@@ -26,6 +26,9 @@ import CardHeader from "./modules/components/Card/CardHeader.js";
 import CardIcon from "./modules/components/Card/CardIcon.js";
 import CardBody from "./modules/components/Card/CardBody.js";
 import CardFooter from "./modules/components/Card/CardFooter.js";
+import CardAvatar from "./modules/components/Card/CardAvatar.js";
+import Button from "./modules/components/CustomButtons/Button.js";
+import avatar from "./modules/assets/img/faces/marc.jpg";
 
 import { bugs, website, server } from "./variables/general.js";
 
@@ -44,8 +47,33 @@ export default function Dashboard() {
   return (
     <div>
       <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
+          <Card profile>
+            <CardAvatar profile>
+              <a href="#pablo" onClick={e => e.preventDefault()}>
+                <img src={avatar} alt="..." />
+              </a>
+            </CardAvatar>
+            <CardBody profile>
+              <h4 className={classes.cardTitle}>
+                {"Co-Founder @ Tesla and SpaceX News "}
+              </h4>
+              <h4 className={classes.cardTitle}>Elon Musk</h4>
+              <p className={classes.description}>
+                I am an american entrepreneur and businessman. I am a proud
+                founder of X.com in 1999 (also known as PayPal), SpaceX in 2002
+                and Tesla Motors in 2003.
+              </p>
+              <Button style={{ backgroundColor: "#EB3B46" }} round>
+                More
+              </Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
+      <GridContainer>
         <GridItem xs={12} sm={12} md={6}>
-          <h5>Upcoming events</h5>
+          <h5>Upcoming Events</h5>
           <br />
           <SnackbarContent
             message={"Event @ San Jose State University on December 23, 2019"}
@@ -61,10 +89,27 @@ export default function Dashboard() {
             icon={AddAlert}
           />
         </GridItem>
+        <GridItem xs={12} sm={12} md={6}>
+          <h5>Future Events</h5>
+          <br />
+          <SnackbarContent
+            message={"Event @ San Jose State University on March 23, 2020"}
+            close
+            color="alert"
+            icon={AddAlert}
+          />
+
+          <SnackbarContent
+            message={"Event @ University of San Francisco on April 02, 2020"}
+            close
+            color="alert"
+            icon={AddAlert}
+          />
+        </GridItem>
       </GridContainer>
       <br />
       <GridContainer>
-        <GridItem xs={12} sm={12} md={4}>
+        <GridItem xs={12} sm={12} md={6}>
           <Card chart>
             <CardHeader color="warning">
               <ChartistGraph
@@ -93,7 +138,7 @@ export default function Dashboard() {
           </Card>
         </GridItem>
 
-        <GridItem xs={12} sm={12} md={4}>
+        <GridItem xs={12} sm={12} md={6}>
           <Card chart>
             <CardHeader color="danger">
               <ChartistGraph
