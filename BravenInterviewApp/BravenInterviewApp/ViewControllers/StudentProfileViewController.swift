@@ -11,12 +11,12 @@ import UIKit
 class StudentProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, EventTableViewCellDelegate {
 
     // MARK: Model
+    var profile: StudentProfile?
+    var upcomingEvents: [CareerEvent] = []
 
     @IBOutlet weak var upcomingEventsTableView: UITableView!
     @IBOutlet weak var careerInterestLabel: UILabel!
-    
-    // TODO: Use database
-    let upcomingEvents: [CareerEvent] = [CareerEvent(id: 12345, name: "Mock Interviews", location: "San Jose", date: "January 1, 2020")]
+    @IBOutlet weak var goalTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +24,29 @@ class StudentProfileViewController: UIViewController, UITableViewDelegate, UITab
         // Set up table view
         upcomingEventsTableView.delegate = self
         upcomingEventsTableView.dataSource = self
-        upcomingEventsTableView.layer.borderWidth = 0.5
-        upcomingEventsTableView.layer.borderColor = upcomingEventsTableView.separatorColor?.cgColor
         
-        // TODO: Set career interests label to have the user's interests
+        profile = MockData.shared.mockProfile
         
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        // TODO: Remove mock data
+                upcomingEvents = [MockData.shared.mockEvent]
+        profile = MockData.shared.mockProfile
+        var interestsText = ""
+        let interests = profile!.careerInterests.sorted{ $0<$1}
+        for i in 0..<interests.count {
+            var newText = interests[i]
+                
+            if i < interests.count - 1 {
+                newText = newText + ", "
+            }
+            interestsText = interestsText + newText
+        }
+        careerInterestLabel.text = interestsText
+        goalTextView.text = profile!.eventGoal
     }
     
     // MARK: Actions
@@ -38,13 +56,23 @@ class StudentProfileViewController: UIViewController, UITableViewDelegate, UITab
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "careerInterestsVC") as! CareerInterestPickerViewController
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
+
+    @IBAction func editPersonalGoalPressed(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "editGoalVC") as! EditGoalViewController
+        // TODO: Connect to backend
+        nextViewController.setGoal(goal: profile!.eventGoal)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+        
+    }
     
     @IBAction func logoutPressed(_ sender: Any) {
         
         self.navigationController?.popViewController(animated: true)
     }
     
-
     // MARK: Table View Methods
     // TODO: Add Past Events
 
@@ -75,10 +103,11 @@ class StudentProfileViewController: UIViewController, UITableViewDelegate, UITab
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
-    func registerPressed() {
+    func registerPressed(event: CareerEvent) {
         // TODO: Present any sign up information
         // TODO: Just update one cell
         upcomingEventsTableView.reloadData()
+        profile?.registeredEvents.append(event.eventID)
     }
     
 }

@@ -10,7 +10,7 @@ import UIKit
 
 protocol EventTableViewCellDelegate: class {
     func moreDetailsPressed(event: CareerEvent)
-    func registerPressed()
+    func registerPressed(event: CareerEvent)
 }
 
 class EventTableViewCell: UITableViewCell {
@@ -60,7 +60,7 @@ class EventTableViewCell: UITableViewCell {
                 delegate?.moreDetailsPressed(event: event)
             } else {
                 event.registerForEvent()
-                delegate?.registerPressed()
+                delegate?.registerPressed(event: event)
             }
             
         }

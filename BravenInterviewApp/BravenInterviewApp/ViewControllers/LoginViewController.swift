@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         
         loginButton.setTitle("Sign In", for: .normal)
         activityIndicator.isHidden = true
+        
     }
 
     @IBAction func loginButtonPressed(_ sender: Any) {

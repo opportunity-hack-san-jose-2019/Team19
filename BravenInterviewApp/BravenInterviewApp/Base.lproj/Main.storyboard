@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="50" id="y8s-hK-uAQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Braven" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRj-Kv-PZx" userLabel="bravenText">
                                 <rect key="frame" x="133" y="219" width="148" height="51"/>
@@ -106,15 +106,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwc-tw-NaM" userLabel="topColorBar">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQB-or-VGB">
-                                        <rect key="frame" x="190" y="102.5" width="141.5" height="35"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alison Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQB-or-VGB">
+                                        <rect key="frame" x="190" y="102.5" width="160" height="35"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-SC-9ch">
-                                        <rect key="frame" x="190" y="145" width="82.5" height="17"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -135,10 +129,16 @@
                                             <action selector="logoutPressed:" destination="Abh-KR-06m" eventType="touchUpInside" id="9hX-uj-O90"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="382749358" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-SC-9ch">
+                                        <rect key="frame" x="190" y="145" width="70" height="17"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="pW1-SC-9ch" secondAttribute="trailing" constant="141.5" id="Ko1-Rg-09S"/>
+                                    <constraint firstAttribute="trailing" secondItem="pW1-SC-9ch" secondAttribute="trailing" constant="154" id="Ko1-Rg-09S"/>
                                     <constraint firstItem="0Mx-r5-5pa" firstAttribute="top" secondItem="cwc-tw-NaM" secondAttribute="top" constant="60" id="OfS-36-tjY"/>
                                     <constraint firstItem="0Mx-r5-5pa" firstAttribute="leading" secondItem="cwc-tw-NaM" secondAttribute="leading" constant="36" id="Opo-LL-r9X"/>
                                     <constraint firstAttribute="trailing" secondItem="0Mx-r5-5pa" secondAttribute="trailing" constant="248" id="SM9-1b-9MG"/>
@@ -147,7 +147,7 @@
                                     <constraint firstItem="9vR-dj-KF0" firstAttribute="top" secondItem="0Mx-r5-5pa" secondAttribute="bottom" constant="-10" id="aaf-9F-xls"/>
                                     <constraint firstItem="pW1-SC-9ch" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fQB-or-VGB" secondAttribute="leading" id="bgx-Y8-zpR"/>
                                     <constraint firstItem="fQB-or-VGB" firstAttribute="leading" secondItem="0Mx-r5-5pa" secondAttribute="trailing" constant="24" id="dEg-Hm-Ovk"/>
-                                    <constraint firstAttribute="trailing" secondItem="fQB-or-VGB" secondAttribute="trailing" constant="82.5" id="hsU-jQ-fWg"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fQB-or-VGB" secondAttribute="trailing" constant="20" id="hsU-jQ-fWg"/>
                                     <constraint firstItem="fQB-or-VGB" firstAttribute="centerY" secondItem="0Mx-r5-5pa" secondAttribute="centerY" constant="-5" id="low-RG-Y05"/>
                                     <constraint firstAttribute="height" constant="210" id="taP-m7-hdH"/>
                                 </constraints>
@@ -158,8 +158,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science, Cognative Science, Psychology, " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ5-hL-wzH" userLabel="careerInterestsLabels">
-                                <rect key="frame" x="20" y="270" width="340" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technology" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ5-hL-wzH" userLabel="careerInterestsLabels">
+                                <rect key="frame" x="20" y="270" width="97.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
                                 <color key="textColor" red="0.92156862750000001" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -176,13 +176,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOo-IT-XsS" userLabel="upcomingEventsTitle">
-                                <rect key="frame" x="20" y="320" width="257" height="30"/>
+                                <rect key="frame" x="20" y="490" width="257" height="30"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pKF-2s-EKb">
-                                <rect key="frame" x="0.0" y="360" width="414" height="536"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pKF-2s-EKb">
+                                <rect key="frame" x="0.0" y="530" width="414" height="366"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="upcomingEventsTableViewCellIdentifier" rowHeight="159" id="EVW-hp-dOC" customClass="EventTableViewCell" customModule="BeBraven" customModuleProvider="target">
@@ -244,32 +244,68 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkR-Ts-9Jg" userLabel="goalsTitle">
+                                <rect key="frame" x="20" y="312" width="216.5" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBK-4i-vdm">
+                                <rect key="frame" x="246.5" y="315" width="32" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="jNf-vb-k8W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="editPersonalGoalPressed:" destination="Abh-KR-06m" eventType="touchUpInside" id="3iu-mK-8Hw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xpk-gP-C1A">
+                                <rect key="frame" x="20" y="352" width="374" height="118"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Practicing for technicnal interviews and getting a chance to talk with professionals in the tech industry to learn more about opportunities.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="AkR-Ts-9Jg" firstAttribute="top" secondItem="NJ5-hL-wzH" secondAttribute="bottom" constant="22" id="1Ol-yc-0Wn"/>
                             <constraint firstItem="b7C-aU-FA0" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" constant="20" id="1cG-KO-45k"/>
                             <constraint firstItem="cwc-tw-NaM" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" id="2ja-Cm-0e9"/>
+                            <constraint firstItem="Xpk-gP-C1A" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" constant="20" id="47A-RO-t34"/>
                             <constraint firstItem="Z9U-hx-IbG" firstAttribute="firstBaseline" secondItem="b7C-aU-FA0" secondAttribute="firstBaseline" id="9ad-7F-JxP"/>
-                            <constraint firstItem="xOo-IT-XsS" firstAttribute="top" secondItem="NJ5-hL-wzH" secondAttribute="bottom" constant="30" id="AQx-8U-ALS"/>
                             <constraint firstItem="pKF-2s-EKb" firstAttribute="top" secondItem="xOo-IT-XsS" secondAttribute="bottom" constant="10" id="CjM-11-DX1"/>
                             <constraint firstItem="Z9U-hx-IbG" firstAttribute="leading" secondItem="b7C-aU-FA0" secondAttribute="trailing" constant="10" id="F5N-Hw-433"/>
                             <constraint firstItem="pKF-2s-EKb" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" id="FWK-Fy-34H"/>
                             <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z9U-hx-IbG" secondAttribute="trailing" constant="20" id="JQJ-eh-ZaG"/>
+                            <constraint firstItem="xOo-IT-XsS" firstAttribute="top" secondItem="NJ5-hL-wzH" secondAttribute="bottom" constant="200" id="KTl-qT-ZUw"/>
                             <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" secondItem="cwc-tw-NaM" secondAttribute="trailing" id="Ki1-aL-7eS"/>
+                            <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" secondItem="Xpk-gP-C1A" secondAttribute="trailing" constant="20" id="Lau-XE-MSy"/>
+                            <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AkR-Ts-9Jg" secondAttribute="trailing" constant="20" id="Nz9-zi-s0X"/>
+                            <constraint firstItem="xOo-IT-XsS" firstAttribute="top" secondItem="Xpk-gP-C1A" secondAttribute="bottom" constant="20" id="PBr-nK-ouQ"/>
                             <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NJ5-hL-wzH" secondAttribute="trailing" constant="20" id="Q7c-nT-tJs"/>
                             <constraint firstItem="NJ5-hL-wzH" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" constant="20" id="UDH-or-WXa"/>
                             <constraint firstItem="xOo-IT-XsS" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" constant="20" id="ZhX-lR-Mt0"/>
+                            <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oBK-4i-vdm" secondAttribute="trailing" constant="20" id="dBv-Um-sV8"/>
                             <constraint firstItem="b7C-aU-FA0" firstAttribute="top" secondItem="cwc-tw-NaM" secondAttribute="bottom" constant="22" id="eJk-mm-PH3"/>
+                            <constraint firstItem="oBK-4i-vdm" firstAttribute="centerY" secondItem="AkR-Ts-9Jg" secondAttribute="centerY" id="eLO-VA-h3e"/>
                             <constraint firstItem="cwc-tw-NaM" firstAttribute="top" secondItem="n8X-pG-1f5" secondAttribute="top" id="geC-HS-PV9"/>
                             <constraint firstAttribute="bottom" secondItem="pKF-2s-EKb" secondAttribute="bottom" id="leB-hr-dWT"/>
                             <constraint firstItem="NJ5-hL-wzH" firstAttribute="top" secondItem="b7C-aU-FA0" secondAttribute="bottom" constant="8" id="oeO-uf-YGE"/>
+                            <constraint firstItem="oBK-4i-vdm" firstAttribute="leading" secondItem="AkR-Ts-9Jg" secondAttribute="trailing" constant="10" id="rc7-hr-7eH"/>
+                            <constraint firstItem="AkR-Ts-9Jg" firstAttribute="leading" secondItem="wJu-c9-3lS" secondAttribute="leading" constant="20" id="tLc-OM-zIK"/>
                             <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xOo-IT-XsS" secondAttribute="trailing" constant="20" id="uG9-tZ-j8X"/>
+                            <constraint firstItem="Xpk-gP-C1A" firstAttribute="top" secondItem="AkR-Ts-9Jg" secondAttribute="bottom" constant="10" id="vQv-8u-T9Y"/>
                             <constraint firstItem="wJu-c9-3lS" firstAttribute="trailing" secondItem="pKF-2s-EKb" secondAttribute="trailing" id="zWz-iC-2lL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wJu-c9-3lS"/>
                     </view>
                     <connections>
                         <outlet property="careerInterestLabel" destination="NJ5-hL-wzH" id="0J2-VG-iQm"/>
+                        <outlet property="goalTextView" destination="Xpk-gP-C1A" id="VG1-be-iBF"/>
                         <outlet property="upcomingEventsTableView" destination="pKF-2s-EKb" id="xRp-pe-mHm"/>
                     </connections>
                 </viewController>
@@ -470,6 +506,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdK-FR-exR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1110" y="46"/>
+        </scene>
+        <!--Edit Goal View Controller-->
+        <scene sceneID="r2Q-Bu-Xgo">
+            <objects>
+                <viewController storyboardIdentifier="editGoalVC" id="R2b-mk-kEc" customClass="EditGoalViewController" customModule="BeBraven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Joi-Ox-dSq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals for Interview Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-3E-NKv">
+                                <rect key="frame" x="34.5" y="59" width="345" height="26"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B39-K9-q0b">
+                                <rect key="frame" x="171" y="812" width="72" height="42"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="R2b-mk-kEc" eventType="touchUpInside" id="wha-YP-jyu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0G2-hw-PZz">
+                                <rect key="frame" x="0.0" y="94" width="414" height="708"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RG5-El-TuX" firstAttribute="bottom" secondItem="0G2-hw-PZz" secondAttribute="bottom" constant="60" id="6KS-ei-hZp"/>
+                            <constraint firstItem="B39-K9-q0b" firstAttribute="centerX" secondItem="RG5-El-TuX" secondAttribute="centerX" id="QA6-Wr-z2F"/>
+                            <constraint firstItem="0G2-hw-PZz" firstAttribute="leading" secondItem="RG5-El-TuX" secondAttribute="leading" id="UWk-qp-kAn"/>
+                            <constraint firstItem="ldE-3E-NKv" firstAttribute="centerX" secondItem="RG5-El-TuX" secondAttribute="centerX" id="gbl-ee-Ulg"/>
+                            <constraint firstItem="ldE-3E-NKv" firstAttribute="top" secondItem="RG5-El-TuX" secondAttribute="top" constant="15" id="niU-UU-WHf"/>
+                            <constraint firstItem="RG5-El-TuX" firstAttribute="trailing" secondItem="0G2-hw-PZz" secondAttribute="trailing" id="rRt-lu-VqS"/>
+                            <constraint firstItem="B39-K9-q0b" firstAttribute="top" secondItem="0G2-hw-PZz" secondAttribute="bottom" constant="10" id="syD-cz-jrI"/>
+                            <constraint firstItem="0G2-hw-PZz" firstAttribute="top" secondItem="RG5-El-TuX" secondAttribute="top" constant="50" id="t2f-rB-c1G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RG5-El-TuX"/>
+                    </view>
+                    <connections>
+                        <outlet property="goalTextView" destination="0G2-hw-PZz" id="5gO-Pv-lh1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9U-4v-9dL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3426" y="46"/>
         </scene>
     </scenes>
     <resources>

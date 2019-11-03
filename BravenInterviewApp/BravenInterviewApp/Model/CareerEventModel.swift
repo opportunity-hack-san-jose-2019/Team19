@@ -9,14 +9,14 @@
 import Foundation
 
 public class CareerEvent: NSObject {
-    var eventID: Int
+    var eventID: String
     var name: String
     var location: String
     var date: String
     var isRegistered: Bool
     var scheduledInterviews: [MockInterview] = []
     
-    init(id: Int, name: String, location: String, date: String) {
+    init(id: String, name: String, location: String, date: String) {
         // TODO: Get this information from the server
         self.eventID = id
         self.name = name

@@ -16,7 +16,7 @@ class CareerInterestPickerViewController: UIViewController, UITableViewDelegate,
     
     // TODO: Get this from the database
     var interests = ["Business", "Public Relations", "Education", "Human Resources", "Behavioral", "Health", "Technology", "Marketing", "Finance", "Communications", "Accounting", "Writing", "Journalism", "Engineering", "Management", "Human Relations"]
-    var recommendedInterests: [String] = ["Nursing", "Administration"]
+    var recommendedInterests: [String] = ["Mechanical Engineering", "Physics"]
     
     var recommendedInterestsSection = 0
     var moreInterestsSection = 1
@@ -41,6 +41,8 @@ class CareerInterestPickerViewController: UIViewController, UITableViewDelegate,
             recommendedInterestsSection = -1
             moreInterestsSection = 0
         }
+        
+        pickedInterests = MockData.shared.mockProfile.careerInterests
         
     }
     
@@ -95,10 +97,15 @@ class CareerInterestPickerViewController: UIViewController, UITableViewDelegate,
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: interestCellIdentifier)!
         
+        var cellText = ""
         if indexPath.section == recommendedInterestsSection {
-            cell.textLabel?.text = recommendedInterests[indexPath.row]
+            cellText = recommendedInterests[indexPath.row]
         } else if indexPath.section == moreInterestsSection {
-            cell.textLabel?.text = interests[indexPath.row]
+            cellText = interests[indexPath.row]
+        }
+        cell.textLabel?.text = cellText
+        if MockData.shared.mockProfile.careerInterests.contains(cellText) {
+            cell.accessoryType = .checkmark
         }
         
         cell.textLabel?.font = UIFont(name: "Hoefler Text", size: 20)
@@ -112,12 +119,25 @@ class CareerInterestPickerViewController: UIViewController, UITableViewDelegate,
         
         if cell.accessoryType == .checkmark {
             cell.accessoryType = .none
-            for i in 0..<pickedInterests.count where pickedInterests[i] == interests[indexPath.row] {
-                pickedInterests.remove(at: i)
+            if indexPath.section == recommendedInterestsSection {
+                for i in 0..<pickedInterests.count where pickedInterests[i] == recommendedInterests[indexPath.row] {
+                    pickedInterests.remove(at: i)
+                }
+            } else if indexPath.section == moreInterestsSection {
+                for i in 0..<pickedInterests.count where pickedInterests[i] == interests[indexPath.row] {
+                    pickedInterests.remove(at: i)
+                }
             }
+            
         } else {
             cell.accessoryType = .checkmark
-            let interest = interests[indexPath.row]
+            var interest = ""
+            if indexPath.section == recommendedInterestsSection {
+                interest = recommendedInterests[indexPath.row]
+            } else if indexPath.section == moreInterestsSection {
+                interest = interests[indexPath.row]
+            }
+            
             self.pickedInterests.append(interest)
         }
     }
@@ -137,7 +157,8 @@ class CareerInterestPickerViewController: UIViewController, UITableViewDelegate,
                          animated: true,
                          completion: nil)
         } else {
-           self.navigationController?.popViewController(animated: true)
+            MockData.shared.mockProfile.careerInterests = pickedInterests
+            self.navigationController?.popViewController(animated: true)
         }
         
     }
