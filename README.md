@@ -6,16 +6,21 @@ We have designed an application with scalable  architecture which can intelligen
 
 ## Components
 * Front End 
-  *iOS App for the student
+  * iOS App for the student
   * ReactJS UI for interviewer-volunteer
 * Backend 
   * Machine Learning algorithm to find the match
   * Flask Server to feed each student detail to the recommender model and then retrive the matching interviewers
-  * Node JS APIs to retrieve data from database
-  
+  * NodeJS APIs to retrieve data from database
 * Data
   * CSV files exported from database for the machine learning model
   * Database
 
 
-
+## Set Up Instructions
+ * iOS App
+ 
+ * Front End
+   
+ 
+ 
