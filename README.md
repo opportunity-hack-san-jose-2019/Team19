@@ -30,6 +30,6 @@ We have designed an application with scalable  architecture which can intelligen
    1.Download the repository
    2.Install the required dependencies from package.json using npm install
    3.Start the server using the command "node index.js"
-   
+  
  
  
