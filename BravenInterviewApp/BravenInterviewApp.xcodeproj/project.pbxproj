@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52D5F61236E437F004A3710 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D5F60236E437F004A3710 /* LoginViewController.swift */; };
+		A52D5F63236E454D004A3710 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D5F62236E454D004A3710 /* StudentProfileViewController.swift */; };
+		A52D5F65236E5F24004A3710 /* CareerInterestPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D5F64236E5F24004A3710 /* CareerInterestPickerViewController.swift */; };
+		A52D5F68236E78B6004A3710 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D5F67236E78B6004A3710 /* EventTableViewCell.swift */; };
+		A52D5F6B236E7955004A3710 /* CareerEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D5F6A236E7955004A3710 /* CareerEventModel.swift */; };
+		A55B6143236EADE600C6A21A /* InterviewEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B6142236EADE600C6A21A /* InterviewEventDetailViewController.swift */; };
+		A55B6145236EB54E00C6A21A /* InterviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B6144236EB54E00C6A21A /* InterviewTableViewCell.swift */; };
 		A58ADA60236E29C800E7E27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ADA5F236E29C800E7E27D /* AppDelegate.swift */; };
 		A58ADA62236E29C800E7E27D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ADA61236E29C800E7E27D /* SceneDelegate.swift */; };
-		A58ADA64236E29C800E7E27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ADA63236E29C800E7E27D /* ViewController.swift */; };
 		A58ADA67236E29C800E7E27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58ADA65236E29C800E7E27D /* Main.storyboard */; };
 		A58ADA69236E29C900E7E27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58ADA68236E29C900E7E27D /* Assets.xcassets */; };
 		A58ADA6C236E29C900E7E27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58ADA6A236E29C900E7E27D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52D5F60236E437F004A3710 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A52D5F62236E454D004A3710 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
+		A52D5F64236E5F24004A3710 /* CareerInterestPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerInterestPickerViewController.swift; sourceTree = "<group>"; };
+		A52D5F67236E78B6004A3710 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		A52D5F6A236E7955004A3710 /* CareerEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerEventModel.swift; sourceTree = "<group>"; };
+		A55B6142236EADE600C6A21A /* InterviewEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewEventDetailViewController.swift; sourceTree = "<group>"; };
+		A55B6144236EB54E00C6A21A /* InterviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewTableViewCell.swift; sourceTree = "<group>"; };
 		A58ADA5C236E29C800E7E27D /* BeBraven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeBraven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58ADA5F236E29C800E7E27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A58ADA61236E29C800E7E27D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A58ADA63236E29C800E7E27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A58ADA66236E29C800E7E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A58ADA68236E29C900E7E27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A58ADA6B236E29C900E7E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A52D5F5F236E4231004A3710 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A52D5F60236E437F004A3710 /* LoginViewController.swift */,
+				A52D5F62236E454D004A3710 /* StudentProfileViewController.swift */,
+				A52D5F64236E5F24004A3710 /* CareerInterestPickerViewController.swift */,
+				A55B6142236EADE600C6A21A /* InterviewEventDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A52D5F66236E788B004A3710 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A52D5F67236E78B6004A3710 /* EventTableViewCell.swift */,
+				A55B6144236EB54E00C6A21A /* InterviewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A52D5F69236E793C004A3710 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A52D5F6A236E7955004A3710 /* CareerEventModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A58ADA53236E29C800E7E27D = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +96,11 @@
 		A58ADA5E236E29C800E7E27D /* BravenInterviewApp */ = {
 			isa = PBXGroup;
 			children = (
+				A52D5F69236E793C004A3710 /* Model */,
+				A52D5F66236E788B004A3710 /* Views */,
+				A52D5F5F236E4231004A3710 /* ViewControllers */,
 				A58ADA5F236E29C800E7E27D /* AppDelegate.swift */,
 				A58ADA61236E29C800E7E27D /* SceneDelegate.swift */,
-				A58ADA63236E29C800E7E27D /* ViewController.swift */,
 				A58ADA65236E29C800E7E27D /* Main.storyboard */,
 				A58ADA68236E29C900E7E27D /* Assets.xcassets */,
 				A58ADA6A236E29C900E7E27D /* LaunchScreen.storyboard */,
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A58ADA64236E29C800E7E27D /* ViewController.swift in Sources */,
+				A52D5F68236E78B6004A3710 /* EventTableViewCell.swift in Sources */,
+				A52D5F63236E454D004A3710 /* StudentProfileViewController.swift in Sources */,
+				A52D5F65236E5F24004A3710 /* CareerInterestPickerViewController.swift in Sources */,
+				A55B6145236EB54E00C6A21A /* InterviewTableViewCell.swift in Sources */,
+				A52D5F61236E437F004A3710 /* LoginViewController.swift in Sources */,
+				A52D5F6B236E7955004A3710 /* CareerEventModel.swift in Sources */,
 				A58ADA60236E29C800E7E27D /* AppDelegate.swift in Sources */,
+				A55B6143236EADE600C6A21A /* InterviewEventDetailViewController.swift in Sources */,
 				A58ADA62236E29C800E7E27D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
