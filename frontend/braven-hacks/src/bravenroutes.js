@@ -39,29 +39,12 @@ import RTLPage from "./modules/RTLPage/RTLPage.js";
 
 const dashboardRoutes = [
   {
-    path: "/dashboard",
+    path: "/bravendashboard",
     name: "Dashboard",
     rtlName: "لوحة القيادة",
     icon: Dashboard,
-    component: DashboardPage,
-    layout: "/admin"
-  },
-
-  {
-    path: "/user",
-    name: "My Bio",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
-    layout: "/admin"
-  },
-  {
-    path: "/table",
-    name: "Event",
-    rtlName: "قائمة الجدول",
-    icon: Notifications,
-    component: TableList,
-    layout: "/admin"
+    component: BravebDashboardPage,
+    layout: "/braven"
   }
 ];
 
