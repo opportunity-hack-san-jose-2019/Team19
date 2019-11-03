@@ -41,7 +41,7 @@ We have designed an application with scalable  architecture which can intelligen
 1. Start the server -  ```node index.js```
 #### Flask Server
 1. Download the github repository
-1. Run ```python app.js```
+1. Run ```python app.py```
  
  ## High Level Architecture
  ![High level Architecture](https://www.lucidchart.com/publicSegments/view/20e39e90-548a-41a8-a820-71a026117ead/image.png)
