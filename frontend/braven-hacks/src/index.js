@@ -4,18 +4,16 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import { green, orange } from "@material-ui/core/colors";
+
 const theme = createMuiTheme({
-  overrides: {
-    palette: {
-      secondary: "#EB3B46"
-    },
-    MuiAppBar: {
-      colorPrimary: {
-        backgroundColor: "#EB3B46"
-      }
+  palette: {
+    secondary: {
+      main: orange[500]
     }
   }
 });
+
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
     <App />

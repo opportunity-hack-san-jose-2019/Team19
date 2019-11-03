@@ -3,6 +3,7 @@ import React from "react";
 import ChartistGraph from "react-chartist";
 import { makeStyles } from "@material-ui/core/styles";
 import AddAlert from "@material-ui/icons/AddAlert";
+import Assignment from "@material-ui/icons/Assignment";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 
@@ -95,7 +96,7 @@ export default function Dashboard() {
           <SnackbarContent
             message={"Event @ San Jose State University on March 23, 2020"}
             close
-            color="alert"
+            color="warning"
             icon={AddAlert}
           />
 
