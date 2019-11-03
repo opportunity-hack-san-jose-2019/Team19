@@ -92,14 +92,16 @@ export default function Dashboard() {
               <p className={classes.cardCategory} style={{ color: "black" }}>
                 San Jose
               </p>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                January 1, 2020 @ 6-8pm
+              </p>
               <h4 className={classes.cardTitle}>Mock Interview </h4>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <LocalOffer />
-                <p className={classes.cardCategory} style={{ color: "black" }}>
-                  January 1, 2020 @ 6-8pm
-                </p>
+                <button style={{ backgroundColor: "#EB3B46" }} round>
+                  Register
+                </button>
               </div>
             </CardFooter>
           </Card>
@@ -113,14 +115,16 @@ export default function Dashboard() {
               <p className={classes.cardCategory} style={{ color: "black" }}>
                 Santa Clara
               </p>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                February 2, 2020 @ 6-8pm
+              </p>
               <h4 className={classes.cardTitle}>Mock Interview </h4>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <LocalOffer />
-                <p className={classes.cardCategory} style={{ color: "black" }}>
-                  February 2, 2020 @ 6-8pm
-                </p>
+                <button style={{ backgroundColor: "#EB3B46" }} round>
+                  Register
+                </button>
               </div>
             </CardFooter>
           </Card>
@@ -134,14 +138,16 @@ export default function Dashboard() {
               <p className={classes.cardCategory} style={{ color: "black" }}>
                 San Jose
               </p>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                March 1, 2020 @ 6-8pm
+              </p>
               <h4 className={classes.cardTitle}>Mock Interview </h4>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <LocalOffer />
-                <p className={classes.cardCategory} style={{ color: "black" }}>
-                  March 1, 2020 @ 6-8pm
-                </p>
+                <button style={{ backgroundColor: "#EB3B46" }} round>
+                  Register
+                </button>
               </div>
             </CardFooter>
           </Card>
@@ -155,14 +161,16 @@ export default function Dashboard() {
               <p className={classes.cardCategory} style={{ color: "black" }}>
                 San Jose
               </p>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                April 1, 2020 @ 6-8pm
+              </p>
               <h4 className={classes.cardTitle}>Mock Interview </h4>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <LocalOffer />
-                <p className={classes.cardCategory} style={{ color: "black" }}>
-                  April 1, 2020 @ 6-8pm
-                </p>
+                <button style={{ backgroundColor: "#EB3B46" }} round>
+                  Register
+                </button>
               </div>
             </CardFooter>
           </Card>
