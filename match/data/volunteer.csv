@@ -1,4 +1,4 @@
-﻿Name,Email,Phone Number,Canceled,Notes,VIP,Station,Day,EVENT LOCATION ,Employer,"Title, Industry","City, State",Career Fields
+﻿Name,Email,Phone,Canceled,Notes,VIP,Station,Day,EventLocation,Employer,Title,Location,Career
 Jiaxian Cai,,,FALSE,,FALSE,Station 1,Wednesday,SJSU,Accenture,Application Support Analyst,"Mountain View,CA",
 Kevin Orlando Rodezno Polanco,,,FALSE,,FALSE,Station 1,Wednesday,PayPal,Accenture,Management Consulting Senior Analyst,,Business; Technology; Management;
 Allison Meyers,,,FALSE,,FALSE,Station 1,Tuesday,PayPal,Adobe,Business Partner Associate Program Manager,San Jose,Business; Management;
@@ -112,17 +112,3 @@ Michelle Koo,,,TRUE,,FALSE,Station 27,Tuesday,SJSU,Sunnyvale School District,Mid
 Yesenia Santos,,,FALSE,,FALSE,Station 28,Tuesday,SJSU,Target,Executive Team Lead Human Resources,"San Jose, CA",Human Resources;
 Christina Rivera,,,TRUE,,FALSE,Station 29,Tuesday,SJSU,TSE,Recruitment Consultant,"San Francisco, CA",
 Benjamin Charrow,,,FALSE,,FALSE,Station 23,Wednesday,PayPal,Waymo,Staff Software Engineer,"Mountain View, CA",Engineering;
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
