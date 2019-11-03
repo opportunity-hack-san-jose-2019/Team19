@@ -28,10 +28,13 @@ We have designed an application with scalable  architecture which can intelligen
 1. Start the application using ```npm start```
    
 ### Backend
+#### NodeJS Server
 1. Download the github repository
 1. ```cd backend/```
 1. Install the dependencies from package.json  ```npm install```
 1. Start the server -  ```node index.js```
-  
+#### Flask Server
+1. Download the github repository
+1. Run ```python app.js```
  
  
