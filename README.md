@@ -43,4 +43,5 @@ We have designed an application with scalable  architecture which can intelligen
 1. Download the github repository
 1. Run ```python app.js```
  
- 
+ ## High Level Architecture
+ ![High level Architecture](https://www.lucidchart.com/invitations/accept/ce29c5a9-1d66-491d-bf01-422f4a3cf323)
