@@ -12,9 +12,22 @@ import CardHeader from "./../components/Card/CardHeader.js";
 import CardAvatar from "./../components/Card/CardAvatar.js";
 import CardBody from "./../components/Card/CardBody.js";
 import CardFooter from "./../components/Card/CardFooter.js";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import TextField from "@material-ui/core/TextField";
 
 import avatar from "./../assets/img/faces/marc.jpg";
-
+const topSkills = [
+  { title: "Software Engineer" },
+  { title: "Java" },
+  { title: "Autonomous Car" },
+  { title: "Machine Learning" },
+  { title: "Solutions Architect" },
+  { title: "Node JS" },
+  { title: "React JS" },
+  { title: "System Design" },
+  { title: "Fashion Designer" },
+  { title: "Biotechnology" }
+];
 const styles = {
   cardCategoryWhite: {
     color: "rgba(255,255,255,.62)",
@@ -82,7 +95,7 @@ export default function UserProfile() {
                 </GridItem>
               </GridContainer>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={4}>
+                <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Title"
                     id="title"
@@ -91,13 +104,25 @@ export default function UserProfile() {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Skills"
-                    id="skills"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
+                <GridItem xs={12} sm={12} md={6}>
+                  <Autocomplete
+                    multiple
+                    options={topSkills}
+                    getOptionLabel={option => option.title}
+                    defaultValue={[topSkills[0]]}
+                    filterSelectedOptions
+                    renderInput={params => (
+                      <TextField
+                        {...params}
+                        variant="outlined"
+                        label="Skills"
+                        placeholder="Skills"
+                        margin="normal"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    )}
                   />
                 </GridItem>
               </GridContainer>
