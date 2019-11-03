@@ -14,14 +14,20 @@ public class CareerEvent: NSObject {
     var location: String
     var date: String
     var isRegistered: Bool
+    var scheduledInterviews: [MockInterview] = []
     
     init(id: Int, name: String, location: String, date: String) {
+        // TODO: Get this information from the server
         self.eventID = id
         self.name = name
         self.location = location
         self.date = date
         self.isRegistered = false
         
+        let interviews: [MockInterview] = [MockInterview(interviewer: "Greg Nelson", time: "5:30pm - 6:00pm", location: "Table A"),
+        MockInterview(interviewer: "Bill Nye", time: "6:30pm - 7:00pm", location: "Table G")]
+        
+        self.scheduledInterviews = interviews
         super.init()
     }
     

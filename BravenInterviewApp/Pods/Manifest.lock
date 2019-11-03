@@ -1,0 +1,40 @@
+PODS:
+  - AWSAPIGateway (2.12.1):
+    - AWSCore (= 2.12.1)
+  - AWSAuthCore (2.12.1):
+    - AWSCore (= 2.12.1)
+  - AWSCognito (2.12.1):
+    - AWSCore (= 2.12.1)
+  - AWSCore (2.12.1)
+  - AWSDynamoDB (2.12.1):
+    - AWSCore (= 2.12.1)
+  - AWSS3 (2.12.1):
+    - AWSCore (= 2.12.1)
+
+DEPENDENCIES:
+  - AWSAPIGateway
+  - AWSAuthCore
+  - AWSCognito
+  - AWSDynamoDB
+  - AWSS3
+
+SPEC REPOS:
+  trunk:
+    - AWSAPIGateway
+    - AWSAuthCore
+    - AWSCognito
+    - AWSCore
+    - AWSDynamoDB
+    - AWSS3
+
+SPEC CHECKSUMS:
+  AWSAPIGateway: 2f8928e46ca2f6262972517225352aaa68e537a7
+  AWSAuthCore: fa908a4df2feb3c978dfabb9a0927dffc69b112d
+  AWSCognito: 9d74863c9518b2a4cd31eb42e055578d7d0fa06c
+  AWSCore: 0a4431f74d9dbf084d420b887a6a21042b423c5c
+  AWSDynamoDB: 517a859d6b4615ca8f7e78f03bd33e3ad955d539
+  AWSS3: 640fad8279e2c5b02d803a82ff5dd6ee75d65c39
+
+PODFILE CHECKSUM: 1ceeb4242d39d4716c85c3fbd8b4d5682db51744
+
+COCOAPODS: 1.8.4

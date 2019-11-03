@@ -56,6 +56,13 @@
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71i-T1-2wN"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AuC-CL-xTe">
+                                <rect key="frame" x="167" y="430" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MbO-sT-0eY"/>
+                                    <constraint firstAttribute="height" constant="80" id="VFC-TF-Nwj"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -65,10 +72,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sai-Mn-KvE" secondAttribute="trailing" id="D5D-MC-BbL"/>
                             <constraint firstItem="noD-aX-dKh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FJX-97-rHF"/>
                             <constraint firstItem="hzl-wK-oq5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GKt-lf-DuE"/>
+                            <constraint firstItem="AuC-CL-xTe" firstAttribute="centerX" secondItem="Sai-Mn-KvE" secondAttribute="centerX" id="IKV-eJ-x4l"/>
                             <constraint firstItem="aRj-Kv-PZx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="VCv-Ks-gom"/>
                             <constraint firstItem="aRj-Kv-PZx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W4Y-ia-hqK"/>
                             <constraint firstItem="Sai-Mn-KvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bCJ-lc-DY1"/>
                             <constraint firstItem="noD-aX-dKh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gWZ-rm-iPE"/>
+                            <constraint firstItem="AuC-CL-xTe" firstAttribute="centerY" secondItem="Sai-Mn-KvE" secondAttribute="centerY" id="huZ-ce-ICu"/>
                             <constraint firstItem="noD-aX-dKh" firstAttribute="top" secondItem="hzl-wK-oq5" secondAttribute="bottom" constant="20" id="lUS-KI-YfK"/>
                             <constraint firstItem="Sai-Mn-KvE" firstAttribute="top" secondItem="noD-aX-dKh" secondAttribute="bottom" constant="20" id="pLn-uO-Aoz"/>
                         </constraints>
@@ -76,6 +85,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="TcL-FG-hdU"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="AuC-CL-xTe" id="fRW-VZ-0TN"/>
+                        <outlet property="loginButton" destination="Sai-Mn-KvE" id="zfe-o1-cgC"/>
                         <outlet property="passwordTextField" destination="noD-aX-dKh" id="X6O-fe-jXf"/>
                         <outlet property="userEmailTextField" destination="hzl-wK-oq5" id="Nl0-OS-bIO"/>
                     </connections>
@@ -340,31 +351,75 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="meM-TO-nUi">
-                                        <rect key="frame" x="0.0" y="147" width="414" height="300"/>
+                                        <rect key="frame" x="0.0" y="132" width="414" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="oLR-W8-qFs"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="XVy-SM-Q4T">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="interviewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="interviewCell" rowHeight="114" id="XVy-SM-Q4T" customClass="InterviewTableViewCell" customModule="BeBraven" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="114"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XVy-SM-Q4T" id="LYR-Nk-HLZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interviewer: First Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMq-kM-8km">
+                                                            <rect key="frame" x="20" y="20" width="189.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 5:30-6:00pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUf-zp-4aL">
+                                                            <rect key="frame" x="20" y="50" width="145.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: Table A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViL-KS-dml">
+                                                            <rect key="frame" x="20" y="78" width="135" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="kMq-kM-8km" firstAttribute="top" secondItem="LYR-Nk-HLZ" secondAttribute="top" constant="20" id="BFe-h1-uIk"/>
+                                                        <constraint firstItem="kMq-kM-8km" firstAttribute="leading" secondItem="LYR-Nk-HLZ" secondAttribute="leading" constant="20" id="GKp-dD-XSl"/>
+                                                        <constraint firstItem="ViL-KS-dml" firstAttribute="top" secondItem="EUf-zp-4aL" secondAttribute="bottom" constant="10" id="Opv-Dq-7zw"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ViL-KS-dml" secondAttribute="trailing" constant="20" id="eYG-UD-Y2j"/>
+                                                        <constraint firstItem="EUf-zp-4aL" firstAttribute="top" secondItem="kMq-kM-8km" secondAttribute="bottom" constant="10" id="jn5-cm-UV9"/>
+                                                        <constraint firstItem="ViL-KS-dml" firstAttribute="leading" secondItem="LYR-Nk-HLZ" secondAttribute="leading" constant="20" id="pFG-Eo-OxX"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EUf-zp-4aL" secondAttribute="trailing" constant="20" id="qn9-kH-0Mc"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kMq-kM-8km" secondAttribute="trailing" constant="20" id="tZG-Ls-Qaa"/>
+                                                        <constraint firstItem="EUf-zp-4aL" firstAttribute="leading" secondItem="LYR-Nk-HLZ" secondAttribute="leading" constant="20" id="ucZ-e7-tL9"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="interviewerLabel" destination="kMq-kM-8km" id="EOu-nV-5Hy"/>
+                                                    <outlet property="locationLabel" destination="ViL-KS-dml" id="aa0-GG-Ou7"/>
+                                                    <outlet property="timeLabel" destination="EUf-zp-4aL" id="A5q-aQ-ncR"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d88-19-pTY">
+                                        <rect key="frame" x="20" y="452" width="178" height="32"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="See Interview Rubric"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="d88-19-pTY" firstAttribute="top" secondItem="meM-TO-nUi" secondAttribute="bottom" constant="20" id="08q-wz-IiL"/>
+                                    <constraint firstItem="d88-19-pTY" firstAttribute="leading" secondItem="7Pd-rb-G4T" secondAttribute="leading" constant="20" id="0qx-oP-CMv"/>
                                     <constraint firstAttribute="trailing" secondItem="meM-TO-nUi" secondAttribute="trailing" id="1DR-FB-jb8"/>
-                                    <constraint firstItem="meM-TO-nUi" firstAttribute="top" secondItem="9ew-yJ-mOG" secondAttribute="bottom" constant="25" id="2i8-Bx-DLV"/>
+                                    <constraint firstItem="meM-TO-nUi" firstAttribute="top" secondItem="9ew-yJ-mOG" secondAttribute="bottom" constant="10" id="2i8-Bx-DLV"/>
                                     <constraint firstItem="9ew-yJ-mOG" firstAttribute="leading" secondItem="7Pd-rb-G4T" secondAttribute="leading" constant="20" id="6p3-0Q-kYj"/>
                                     <constraint firstItem="fqP-6e-I03" firstAttribute="centerX" secondItem="7Pd-rb-G4T" secondAttribute="centerX" id="A9x-PU-qpw"/>
                                     <constraint firstItem="meM-TO-nUi" firstAttribute="leading" secondItem="7Pd-rb-G4T" secondAttribute="leading" id="Dwu-rg-7Y1"/>
                                     <constraint firstItem="fqP-6e-I03" firstAttribute="top" secondItem="7Pd-rb-G4T" secondAttribute="top" constant="36" id="Ips-Pn-SPv"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="d88-19-pTY" secondAttribute="trailing" constant="20" id="Y4V-NR-SMo"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9ew-yJ-mOG" secondAttribute="trailing" constant="20" id="eXD-yY-V6x"/>
                                     <constraint firstItem="9ew-yJ-mOG" firstAttribute="top" secondItem="fqP-6e-I03" secondAttribute="bottom" constant="30" id="kLI-5j-3xT"/>
                                 </constraints>
