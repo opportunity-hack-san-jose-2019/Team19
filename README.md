@@ -22,8 +22,8 @@ We have designed an application with scalable  architecture which can intelligen
 ### iOS App
  
 ### Front End
-1. Download the repository
-1. Install the required dependencies from package.json using npm install
+1. Download the git hub code
+1. Run  ```npm install```
 1 .Start the application using "npm start"
    
 ### Backend
