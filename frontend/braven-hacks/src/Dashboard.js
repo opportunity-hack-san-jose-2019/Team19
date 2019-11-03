@@ -99,9 +99,9 @@ export default function Dashboard() {
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <button style={{ backgroundColor: "#EB3B46" }} round>
-                  Register
-                </button>
+              <Button style={{ backgroundColor: "#EB3B46" ,marginLeft: "70px"}} round>
+                Register
+              </Button>
               </div>
             </CardFooter>
           </Card>
@@ -122,9 +122,9 @@ export default function Dashboard() {
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <button style={{ backgroundColor: "#EB3B46" }} round>
-                  Register
-                </button>
+              <Button style={{ backgroundColor: "#0DB3C8" ,marginLeft: "70px"}} round>
+                Register
+              </Button>
               </div>
             </CardFooter>
           </Card>
@@ -145,9 +145,9 @@ export default function Dashboard() {
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <button style={{ backgroundColor: "#EB3B46" }} round>
-                  Register
-                </button>
+              <Button style={{ backgroundColor: "#EB3B46" ,marginLeft: "70px"}} round>
+                Register
+              </Button>
               </div>
             </CardFooter>
           </Card>
@@ -168,9 +168,9 @@ export default function Dashboard() {
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <button style={{ backgroundColor: "#EB3B46" }} round>
-                  Register
-                </button>
+              <Button style={{ backgroundColor: "#0DB3C8" ,marginLeft: "70px"}} round onClick="/event">
+                Register
+              </Button>
               </div>
             </CardFooter>
           </Card>
