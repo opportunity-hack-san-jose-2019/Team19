@@ -22,14 +22,16 @@ We have designed an application with scalable  architecture which can intelligen
 ### iOS App
  
 ### Front End
-1. Download the git hub code
+1. Download the github code
+1. ```cd frontend/braven-hacks/```
 1. Run  ```npm install```
 1. Start the application using ```npm start```
    
 ### Backend
-1. Download the repository
-1. Install the required dependencies from package.json using npm install
-1. Start the server using the command "node index.js"
+1. Download the github repository
+1. ```cd backend/```
+1. Install the dependencies from package.json  ```npm install```
+1. Start the server -  ```node index.js```
   
  
  
