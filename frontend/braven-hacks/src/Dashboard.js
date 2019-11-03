@@ -15,6 +15,13 @@ import Snackbar from "./modules/components/Snackbar/Snackbar.js";
 import BugReport from "@material-ui/icons/BugReport";
 import Code from "@material-ui/icons/Code";
 import Cloud from "@material-ui/icons/Cloud";
+import Store from "@material-ui/icons/Store";
+import Warning from "@material-ui/icons/Warning";
+import DateRange from "@material-ui/icons/DateRange";
+import LocalOffer from "@material-ui/icons/LocalOffer";
+import Update from "@material-ui/icons/Update";
+
+import Accessibility from "@material-ui/icons/Accessibility";
 
 import GridItem from "./modules/components/Grid/GridItem.js";
 import GridContainer from "./modules/components/Grid/GridContainer.js";
@@ -72,42 +79,96 @@ export default function Dashboard() {
           </Card>
         </GridItem>
       </GridContainer>
+      <div>
+        <h2>Upcoming Events</h2>
+      </div>
       <GridContainer>
-        <GridItem xs={12} sm={12} md={6}>
-          <h5>Upcoming Events</h5>
-          <br />
-          <SnackbarContent
-            message={"Event @ San Jose State University on December 23, 2019"}
-            close
-            color="success"
-            icon={AddAlert}
-          />
-
-          <SnackbarContent
-            message={"Event @ University of San Francisco on Feb 02, 2020"}
-            close
-            color="info"
-            icon={AddAlert}
-          />
+        <GridItem xs={12} sm={6} md={3}>
+          <Card>
+            <CardHeader color="danger" stats icon>
+              <CardIcon color="danger">
+                <Accessibility />
+              </CardIcon>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                San Jose
+              </p>
+              <h4 className={classes.cardTitle}>Mock Interview </h4>
+            </CardHeader>
+            <CardFooter stats>
+              <div className={classes.stats}>
+                <LocalOffer />
+                <p className={classes.cardCategory} style={{ color: "black" }}>
+                  January 1, 2020 @ 6-8pm
+                </p>
+              </div>
+            </CardFooter>
+          </Card>
         </GridItem>
-        <GridItem xs={12} sm={12} md={6}>
-          <h5>Future Events</h5>
-          <br />
-          <SnackbarContent
-            message={"Event @ San Jose State University on March 23, 2020"}
-            close
-            color="warning"
-            icon={AddAlert}
-          />
-
-          <SnackbarContent
-            message={"Event @ University of San Francisco on April 02, 2020"}
-            close
-            color="alert"
-            icon={AddAlert}
-          />
+        <GridItem xs={12} sm={6} md={3}>
+          <Card>
+            <CardHeader color="info" stats icon>
+              <CardIcon color="info">
+                <Accessibility />
+              </CardIcon>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                Santa Clara
+              </p>
+              <h4 className={classes.cardTitle}>Mock Interview </h4>
+            </CardHeader>
+            <CardFooter stats>
+              <div className={classes.stats}>
+                <LocalOffer />
+                <p className={classes.cardCategory} style={{ color: "black" }}>
+                  February 2, 2020 @ 6-8pm
+                </p>
+              </div>
+            </CardFooter>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={6} md={3}>
+          <Card>
+            <CardHeader color="danger" stats icon>
+              <CardIcon color="danger">
+                <Accessibility />
+              </CardIcon>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                San Jose
+              </p>
+              <h4 className={classes.cardTitle}>Mock Interview </h4>
+            </CardHeader>
+            <CardFooter stats>
+              <div className={classes.stats}>
+                <LocalOffer />
+                <p className={classes.cardCategory} style={{ color: "black" }}>
+                  March 1, 2020 @ 6-8pm
+                </p>
+              </div>
+            </CardFooter>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={6} md={3}>
+          <Card>
+            <CardHeader color="info" stats icon>
+              <CardIcon color="info">
+                <Accessibility />
+              </CardIcon>
+              <p className={classes.cardCategory} style={{ color: "black" }}>
+                San Jose
+              </p>
+              <h4 className={classes.cardTitle}>Mock Interview </h4>
+            </CardHeader>
+            <CardFooter stats>
+              <div className={classes.stats}>
+                <LocalOffer />
+                <p className={classes.cardCategory} style={{ color: "black" }}>
+                  April 1, 2020 @ 6-8pm
+                </p>
+              </div>
+            </CardFooter>
+          </Card>
         </GridItem>
       </GridContainer>
+
       <br />
       <GridContainer>
         <GridItem xs={12} sm={12} md={6}>
