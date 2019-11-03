@@ -19,17 +19,17 @@ We have designed an application with scalable  architecture which can intelligen
   * Database
 
 ## Set Up Instructions
- * iOS App
+### iOS App
  
- * Front End
-   1. Download the repository
-   2. Install the required dependencies from package.json using npm install
-   1 .Start the application using "npm start"
+### Front End
+1. Download the repository
+1. Install the required dependencies from package.json using npm install
+1 .Start the application using "npm start"
    
- * Backend
-   1. Download the repository
-   1. Install the required dependencies from package.json using npm install
-   1. Start the server using the command "node index.js"
+### Backend
+1. Download the repository
+1. Install the required dependencies from package.json using npm install
+1. Start the server using the command "node index.js"
   
  
  
