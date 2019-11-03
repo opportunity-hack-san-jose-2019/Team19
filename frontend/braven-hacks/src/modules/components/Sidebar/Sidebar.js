@@ -104,7 +104,7 @@ export default function Sidebar(props) {
           anchor={props.rtlActive ? "left" : "right"}
           open={props.open}
           classes={{
-            paper: classNames(classes.drawerPaper, {
+            paper: classNames({
               [classes.drawerPaperRTL]: props.rtlActive
             })
           }}
@@ -142,7 +142,9 @@ export default function Sidebar(props) {
           {image !== undefined ? (
             <div
               className={classes.background}
-              style={{ backgroundImage: "url(" + image + ")" }}
+              style={{
+                backgroundImage: "url(" + image + ")"
+              }}
             />
           ) : null}
         </Drawer>

@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import Snack from "@material-ui/core/SnackbarContent";
 import IconButton from "@material-ui/core/IconButton";
+import Button from "./../../components/CustomButtons/Button.js";
 // @material-ui/icons
 import Close from "@material-ui/icons/Close";
 // core components
@@ -45,7 +46,7 @@ export default function SnackbarContent(props) {
         action: classNames({ [classes.actionRTL]: rtlActive })
       }}
       action={action}
-    />
+    ></Snack>
   );
 }
 
