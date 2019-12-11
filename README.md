@@ -45,3 +45,5 @@ We have designed an application with scalable  architecture which can intelligen
  
  ## High Level Architecture
  ![High level Architecture](https://www.lucidchart.com/publicSegments/view/20e39e90-548a-41a8-a820-71a026117ead/image.png)
+ 
+ Devpost - https://devpost.com/software/braven_maverick
